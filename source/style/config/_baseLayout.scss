@@ -1,9 +1,19 @@
-.wrap {
-
-
+.wrapper {
+    min-width: 320px;
+    min-height: 320px;
+    max-width: 1366px;
+    color: #FFFFFF;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: row;
 }
 
 .container {
-
-    
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    // margin: 0;
+   
 }
