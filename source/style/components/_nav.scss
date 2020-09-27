@@ -52,5 +52,7 @@
 }
 
 .nav__link:nth-child(7) {
-    background: url("../../source/img/nav/power-button.png") no-repeat center;
+    flex-grow: 1;
+    background: url("../../source/img/nav/power-button.png") no-repeat;
+    background-position: 50% 90%;
 }
