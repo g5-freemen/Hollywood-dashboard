@@ -2,19 +2,12 @@
     min-width: 320px;
     min-height: 320px;
     max-width: 1366px;
-    color: #FFFFFF;
-    background-color: grey;
     font-family: 'Lato', sans-serif;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-}
+    }
 
 .container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 94%;
-    height: 100vh;
-    background-color: aqua;   
-}
+    @include flexibles(94%, 100vh, center,center,row, wrap);
+    }

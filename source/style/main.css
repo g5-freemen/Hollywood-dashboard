@@ -345,8 +345,6 @@ template {
   min-width: 320px;
   min-height: 320px;
   max-width: 1366px;
-  color: #FFFFFF;
-  background-color: grey;
   font-family: 'Lato', sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -363,15 +361,19 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 94%;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 94%;
-  height: 100vh;
-  background-color: aqua;
 }
 
 .nav {
@@ -483,7 +485,6 @@ template {
       -ms-flex-direction: row;
           flex-direction: row;
   height: 40%;
-  background-color: red;
 }
 
 .header_top__link, .header_top__dots {
