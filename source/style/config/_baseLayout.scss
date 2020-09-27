@@ -3,17 +3,19 @@
     min-height: 320px;
     max-width: 1366px;
     color: #FFFFFF;
+    background-color: grey;
     font-family: 'Lato', sans-serif;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .container {
     display: flex;
-    align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    // margin: 0;
+    width: 94%;
+    height: 100vh;
+    background-color: aqua;
    
 }

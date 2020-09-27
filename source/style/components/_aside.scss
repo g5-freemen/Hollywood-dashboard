@@ -1,3 +1,6 @@
-p {
-    @include Primary-text;
+.aside {
+    width: 21%;
+    height: 53%;
+    flex-direction: column;
+    background-color:goldenrod;
 }
