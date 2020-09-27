@@ -1,6 +1,10 @@
-.aside {
+.side-box {
     width: 21%;
-    height: 53%;
+    height: 83%;
     flex-direction: column;
-    background-color:goldenrod;
+}
+
+.aside {
+    height: 73%;
+    background-color:black;
 }

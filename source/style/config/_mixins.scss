@@ -4,9 +4,6 @@
     font-weight: 400;
     line-height: normal;
     color: red;
-<<<<<<< HEAD
-=======
-    
 }
 
 @mixin flexible($jCont: center,$aCont: stretch,$direct: row,$wrap: wrap) {
@@ -15,5 +12,4 @@
     align-content: $aCont;
     flex-direction: $direct;
     flex-wrap: $wrap;
->>>>>>> 2346c88ccbdfd4e38a92ba1094a18799b3393ca4
 }
