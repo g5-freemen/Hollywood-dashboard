@@ -1,13 +1,15 @@
-@mixin Primary-text {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2em;
-    font-weight: 400;
-    line-height: normal;
-    color: red;
+@mixin flexible($jCont: center, $aCont:center, $direct:row, $wrap:wrap) {
+    display: flex;
+    justify-content: $jCont;
+    align-content: $aCont;
+    flex-direction: $direct;
+    flex-wrap: $wrap;
 }
 
-@mixin flexible($jCont: center,$aCont: stretch,$direct: row,$wrap: wrap) {
+@mixin flexibles($W, $H, $jCont: center, $aCont:center, $direct:row, $wrap:wrap) {
     display: flex;
+    width: $W;
+    height: $H;
     justify-content: $jCont;
     align-content: $aCont;
     flex-direction: $direct;

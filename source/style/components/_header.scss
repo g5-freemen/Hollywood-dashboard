@@ -5,12 +5,36 @@
     font-size: 16px;
 }
 
-.header__top {
+.header_top {
+    display: flex;
+    flex-direction: row;
     height: 40%;
     background-color: red;
 }
 
-.header__bottom {
+.header_top__link, .header_top__dots {
+    flex-grow: 1;
+    background-color: violet;
+    border: 2px gray solid;
+}
+
+.header_top__dots {
+    background: url("../../source/img/header/Ellipse3.png") no-repeat center;
+}
+
+.header_top__search {
+    flex-grow: 8;
+    background-color: palegreen;
+    border: 2px gray solid;
+}
+
+.header_top__person {
+    flex-grow: 4;
+    background-color: palegreen;
+    border: 2px gray solid;
+}
+
+.header_bottom {
     height: 60%;
     background-color: gold;
 }
