@@ -3,38 +3,108 @@
     height: 17%;
     font-weight: bold;
     font-size: 16px;
-}
+    }
 
 .header_top {
     display: flex;
     flex-direction: row;
     height: 40%;
-    // background-color: red;
-}
+    }
 
-.header_top__link, .header_top__dots {
+.header_top__link, .header_top__dots, .header_top__search, .header_top__person {
     flex-grow: 1;
-    background-color: violet;
-    border: 2px gray solid;
-}
+    border: 1px #F1F1F1 solid;
+    }
+
+.header_top__link:nth-child(1) {
+    background: url("../../source/img/header/more.png") no-repeat center;
+    }
+
+.header_top__link:nth-child(2) {
+    background: url("../../source/img/header/folder.png") no-repeat center;
+    }
+
+.header_top__link:nth-child(3) {
+    background: url("../../source/img/header/settings.png") no-repeat center;
+    }
+
+.header_top__link:nth-child(5) {
+    background: url("../../source/img/header/upload.png") no-repeat center;
+    }
+
+.header_top__link:nth-child(6) {
+    background: url("../../source/img/header/mail.png") no-repeat center;
+    }
+
+.header_top__link:nth-child(7) {
+    background: url("../../source/img/header/globe.png") no-repeat 50% 30%;
+    }
+
+.header_top__search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 10;
+    }
+
+.header_top__search--input {
+    width: 50%;
+    padding: 1% 2%;
+    border: 1px #F2F2F2 solid;
+    border-radius: 5vw;
+    background: url("../../source/img/header/zoom-in.png") no-repeat 96%;
+    background-color: #F8F8F8;
+    color: #C8C8C8;
+    }
+
+.header_top__person {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    border-right: none;
+    }
+
+    .header_top__person-photo {
+        height: 100%;
+        object-fit: contain;
+        }
+
+.header_top__person-name {
+    margin: 0;
+    font-size: 13px;
+    color: red;
+    }
+
+.header_top__person-occupation {
+    margin: 0;
+    font-size: 10px;
+    font-weight: 400;
+    color: #BFBFBF;
+    }
 
 .header_top__dots {
     background: url("../../source/img/header/Ellipse3.png") no-repeat center;
-}
-
-.header_top__search {
-    flex-grow: 8;
-    background-color: palegreen;
-    border: 2px gray solid;
-}
-
-.header_top__person {
-    flex-grow: 4;
-    background-color: palegreen;
-    border: 2px gray solid;
-}
+    border-left: none;
+    }
 
 .header_bottom {
     height: 60%;
-    background-color: gold;
-}
+    display: flex;
+    flex-direction: row;
+    }
+
+.header_bottom__stat, .header_bottom__add-stat {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-right: 2px solid orange;
+    }
+
+.header_bottom__add-stat {
+    font-size: 12px;
+    }
