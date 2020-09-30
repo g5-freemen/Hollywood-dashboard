@@ -1,10 +1,103 @@
 .side-box {
     width: 21%;
     height: 83%;
-    flex-direction: column;
-}
+    }
 
 .aside {
     height: 73%;
-    background-color:black;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+.aside__menu {
+    @include flexibles(100%, 10%, center, center, row, wrap);
+    background: linear-gradient(to right,rgb(243,114,87), rgb(253,82,114));
+    }
+
+.aside__menu__icon {
+    flex-grow: 1;
+    height: 50%;
+    }
+
+.aside__menu__icon:nth-child(1) {
+    background: url("../../source/img/aside/users.png") no-repeat center;
+    background-size: contain;
+    }
+    
+.aside__menu__icon:nth-child(2) {
+    background: url("../../source/img/aside/chat.png") no-repeat center;
+    background-size: contain;
+    }
+    
+.aside__menu__icon:nth-child(3) {
+    background: url("../../source/img/aside/like.png") no-repeat center;
+    background-size: contain;
+    }
+
+.aside__actor {
+    width: 90%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background: url("../../source/img/aside/chat-actor.png") no-repeat right;
+    border-bottom: 2px solid #F1F1F1;
+    align-items: center;
+    }
+
+.aside__actor:nth-child(7) {
+    border-bottom: none;
+    }
+
+.aside__actor--photo {
+    height: 70%;
+    object-fit: contain;
+    }
+
+.aside__actor--name {
+    margin: 0 0 0 5%;
+    color: #777777;
+    font-size: 13px;
+    font-weight: bold;
+    }
+
+.aside__actor--name::after {
+    white-space: pre;
+    content: "\0a Cheif Authority";
+    color: #BFBFBF;
+    font-size: 10px;
+    }
+
+.aside__search {
+    @include flexibles(100%, 10%, center, center, row, wrap);
+    background-color: #FCFCFC;
+    border-top: #F1F1F1 1px solid;
+    border-bottom: #F1F1F1 1px solid;
+    }
+
+.aside__search--input {
+    margin: 0 10% 0 5%;
+    padding-bottom: 1%;
+    width: 60%;
+    color: #C0C0C0;
+    font-weight: 300;
+    font-size: 10px;
+    border: none;
+    border-bottom: 1px solid #E9E9E9;
+    }
+
+.aside__search--zoom {
+    width: 1.5vw;
+    height: 1.5vw;
+    margin-right: 3%;
+    background: url("../../source/img/aside/zoom.png") no-repeat center;
+    border: none;
+    }
+
+.aside__search--edit {
+    width: 1.5vw;
+    height: 1.5vw;
+    background: url("../../source/img/aside/edit.png") no-repeat center;
+    border: none;
+    }

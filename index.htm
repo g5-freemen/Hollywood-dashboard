@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./source/style/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
-    <link href="https://allfont.ru/allfont.css?fonts=deftone-stylus" rel="stylesheet" type="text/css" />
     <title>Hollywood dashboard</title>
 </head>
 <body>
@@ -15,17 +14,18 @@
         <span class="nav__logo">W</span>
       </div>
     
-      <a class="nav__link" href="#"></a>
-      <a class="nav__link" href="#"></a>
-      <a class="nav__link" href="#"></a>
-      <a class="nav__link" href="#"></a>
-      <a class="nav__link" href="#"></a>
+      <a class="nav__link" href="#">Home</a>
+      <a class="nav__link" href="#">Stactics</a>
+      <a class="nav__link" href="#">Users</a>
+      <a class="nav__link" href="#">Settings</a>
+      <a class="nav__link" href="#">Quires</a>
 
       <a class="nav__link" href="#"></a> <!-- Nav / Power button (bottom) -->
-    </nav>
+    </nav> <!--end of Nav -->
 
   <div class="container">
     <header class="header">
+
         <div class="header_top">
           <div class="header_top__link"></div>
           <div class="header_top__link"></div>
@@ -37,33 +37,129 @@
           <div class="header_top__link"></div>
           <div class="header_top__link"></div>
           <div class="header_top__person">
-            <img class="header_top__person-photo" src="./source/img/header/Person.png" alt="kendall Jenner">
-            <p class="header_top__person-name">kendall Jenner</p>
+            <img class="header_top__person-photo" src="./source/img/header/Person.png" alt="Kendall Jenner">
+            <p class="header_top__person-name">Kendall Jenner</p>
             <p class="header_top__person-occupation">Cheif Authority</p>
           </div>
           <div class="header_top__dots"></div>
-        </div>
+        </div> <!--end of .header_top -->
+
         <div class="header_bottom">
-          <div class="header_bottom__stat">1</div>
-          <div class="header_bottom__stat">2</div>
-          <div class="header_bottom__stat">3</div>
-          <div class="header_bottom__stat">4</div>
-          <div class="header_bottom__stat">5</div>
-          <div class="header_bottom__stat">6</div>
-          <div class="header_bottom__stat">7</div>
+          <div class="header_bottom__stat">
+            <div class="header_bottom__stat--name">Daily Visitors</div>
+            <div class="header_bottom__stat--value">150,0000</div>
+            <div class="header_bottom__stat--today">
+              <div class="header_bottom__stat--today-up">1020</div>
+              <div class="header_bottom__stat--today-down">1020</div>
+            </div>
+          </div>
+          <div class="header_bottom__stat">
+            <div class="header_bottom__stat--name">Daily Customers</div>
+            <div class="header_bottom__stat--value">120,0000</div>
+            <div class="header_bottom__stat--today">
+              <div class="header_bottom__stat--today-up">1020</div>
+              <div class="header_bottom__stat--today-down">1020</div>
+            </div>
+          </div>
+          <div class="header_bottom__stat">
+            <div class="header_bottom__stat--name">Daily Orders</div>
+            <div class="header_bottom__stat--value">900,000</div>
+            <div class="header_bottom__stat--today">
+              <div class="header_bottom__stat--today-up">1020</div>
+              <div class="header_bottom__stat--today-down">1020</div>
+            </div>
+          </div>
+          <div class="header_bottom__stat">
+            <div class="header_bottom__stat--name">Daily Sales</div>
+            <div class="header_bottom__stat--value">850,000</div>
+            <div class="header_bottom__stat--today">
+              <div class="header_bottom__stat--today-up">1020</div>
+              <div class="header_bottom__stat--today-down">1020</div>
+            </div>
+          </div>
+          <div class="header_bottom__stat">
+            <div class="header_bottom__stat--name">Daily Shipments</div>
+            <div class="header_bottom__stat--value">750,000</div>
+            <div class="header_bottom__stat--today">
+              <div class="header_bottom__stat--today-up">1020</div>
+              <div class="header_bottom__stat--today-down">1020</div>
+            </div>
+          </div>
+          <div class="header_bottom__stat">
+            <div class="header_bottom__stat--name">Daily Revenue</div>
+            <div class="header_bottom__stat--value">$985,0000</div>
+            <div class="header_bottom__stat--today">
+              <div class="header_bottom__stat--today-up">1020</div>
+              <div class="header_bottom__stat--today-down">1020</div>
+            </div>
+          </div>
+          <div class="header_bottom__stat">
+            <div class="header_bottom__stat--name">Daily Reviews</div>
+            <div class="header_bottom__stat--value">600,000</div>
+            <div class="header_bottom__stat--today">
+              <div class="header_bottom__stat--today-up">1020</div>
+              <div class="header_bottom__stat--today-down">1020</div>
+            </div>
+          </div>
           <div class="header_bottom__add-stat">+‎&#160;&#160;Add Stactics</div>
-        </div>
-    </header>
+        </div> <!--end of .header_top -->
+    </header> <!--end of header -->
 
     <main class="main">
-    </main>
+    </main> <!--end of main -->
 
     <div class="side-box">
       <aside class="aside">
-      </aside>
+        <div class="aside__menu">
+          <div class="aside__menu__icon"></div>
+          <div class="aside__menu__icon"></div>
+          <div class="aside__menu__icon"></div>
+        </div>
+
+        <div class="aside__actor">
+          <img class="aside__actor--photo" src="./source/img/aside/actor-Jennifer_Lawrence.png" alt="Jennifer Lawrence">
+          <p class="aside__actor--name">Jennifer Lawrence</p>
+        </div>
+        <div class="aside__actor">
+          <img class="aside__actor--photo" src="./source/img/aside/actor-Brad_Pitt.png" alt="Brad Pitt">
+          <p class="aside__actor--name">Brad Pitt</p>
+        </div>
+        <div class="aside__actor">
+          <img class="aside__actor--photo" src="./source/img/aside/actor-Leonardo_Dicaprio.png" alt="Leonardo Dicaprio">
+          <p class="aside__actor--name">Leonardo Dicaprio</p>
+        </div>
+        <div class="aside__actor">
+          <img class="aside__actor--photo" src="./source/img/aside/actor-Jesse_Eisenberg.png" alt="Jesse Eisenberg">
+          <p class="aside__actor--name">Jesse Eisenberg</p>
+        </div>
+        <div class="aside__actor">
+          <img class="aside__actor--photo" src="./source/img/aside/actor-Kristen Stewart.png" alt="Kristen Stewart">
+          <p class="aside__actor--name">Kristen Stewart</p>
+        </div>
+        <div class="aside__actor">
+          <img class="aside__actor--photo" src="./source/img/aside/actor-Ben_Affleck.png" alt="Ben Affleck">
+          <p class="aside__actor--name">Ben Affleck</p>
+        </div>
+        
+        <div class="aside__search">
+          <input class="aside__search--input" type="text" value="Search Peoples, Chats and Reviews">
+          <button class="aside__search--zoom"></button>
+          <button class="aside__search--edit"></button>
+        </div>
+      </aside> <!--end of aside -->
        
       <footer class="footer">
-      </footer>
+        <span class="footer__title">Featured Companys</span>
+        <div class="footer_box">
+          <div class="footer__link"></div>
+          <div class="footer__link"></div>
+          <div class="footer__link"></div>
+          <div class="footer__link"></div>
+          <div class="footer__link"></div>
+          <div class="footer__link"></div>
+
+        </div>
+      </footer> <!--end of footer -->
     </div> <!--end of .side-box -->
 
 

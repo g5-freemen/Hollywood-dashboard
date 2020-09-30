@@ -41,9 +41,7 @@
     }
 
 .header_top__search {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexible(center,center, row, wrap);
     flex-grow: 10;
     }
 
@@ -58,28 +56,25 @@
     }
 
 .header_top__person {
+    @include flexible(center,flex-start,column, wrap);
     flex-grow: 2;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: center;
+    border-left: none;
     border-right: none;
     }
 
-    .header_top__person-photo {
-        height: 100%;
-        object-fit: contain;
-        }
+.header_top__person-photo {
+    height: 100%;
+    object-fit: contain;
+    }
 
 .header_top__person-name {
-    margin: 0;
+    margin: 0 0 2% 5%;
     font-size: 13px;
     color: red;
     }
 
 .header_top__person-occupation {
-    margin: 0;
+    margin: 0 0 0 5%;
     font-size: 10px;
     font-weight: 400;
     color: #BFBFBF;
@@ -97,14 +92,44 @@
     }
 
 .header_bottom__stat, .header_bottom__add-stat {
-    display: flex;
+    @include flexible(center,center,column, wrap);
     flex-grow: 1;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    border-right: 2px solid orange;
     }
 
 .header_bottom__add-stat {
+    color: #FD7858;
     font-size: 12px;
+    }
+
+.header_bottom__stat--name, .header_bottom__stat--value, .header_bottom__stat--today {
+    @include flexible(left,center,row, wrap);
+    }
+
+.header_bottom__stat--name {
+    color: #777777;
+    font-weight: bold;
+    font-size: 12px;
+    }
+
+.header_bottom__stat--value {
+    margin: 1% 0 2%;
+    color: #FD7858;
+    font-weight: bold;
+    font-size: 20px;
+    }
+
+.header_bottom__stat--today-up, .header_bottom__stat--today-down {
+    color: #BFBFBF;
+    font-weight: bold;
+    font-size: 12px;
+    }
+
+.header_bottom__stat--today-up::before {
+    content: "\25B2";
+    color: #A889E9;
+    }
+
+.header_bottom__stat--today-down::before {
+    content: "\00A0\25BC";
+    color: #FD5670;
     }

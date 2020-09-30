@@ -4,6 +4,7 @@
     width: 6%;
     height: 100vh;
     background: linear-gradient(to bottom,rgb(243,114,87), rgb(253,82,114));
+    text-decoration: none;
     }
 
 .nav__logo--wrapper {
@@ -19,40 +20,41 @@
     top: 0;
     left: 0;
     background-color: #FFFFFF;
-    color: rgba($color: red, $alpha: 0.5);
-    font-family:  'Deftone Stylus', arial;  
+    color: rgba($color: #FF0000, $alpha: 0.5);
+    font-family: 'Deftone Stylus', arial;  
     font-size: 30px;
     }
 
 .nav__link {
-    @include flexibles(3vw, 3vw, center, center, column, wrap);
-    margin: 0 auto;
-    border: 1px solid grey;
+    @include flexibles(4vw, 3vw, flex-end, center, column, wrap);
+    margin: 6% auto;
+    font-size: 10px;
+    color: #FFFFFF;
     text-decoration: none;
-}
+    }
 
 .nav__link:nth-child(2) {
-    background: url("../../source/img/nav/home.png") no-repeat center;
-}
+    background: url("../../source/img/nav/home.png") no-repeat 50% 30%;
+    }
 
 .nav__link:nth-child(3) {
-    background: url("../../source/img/nav/bar-chart.png") no-repeat center;
-}
+    background: url("../../source/img/nav/bar-chart.png") no-repeat 50% 30%;
+    }
 
 .nav__link:nth-child(4) {
-    background: url("../../source/img/nav/user.png") no-repeat center;
-}
+    background: url("../../source/img/nav/user.png") no-repeat 50% 30%;
+    }
 
 .nav__link:nth-child(5) {
-    background: url("../../source/img/nav/settings.png") no-repeat center;
-}
+    background: url("../../source/img/nav/settings.png") no-repeat 50% 30%;
+    }
 
 .nav__link:nth-child(6) {
-    background: url("../../source/img/nav/information.png") no-repeat center;
-}
+    background: url("../../source/img/nav/information.png") no-repeat 50% 30%;
+    }
 
 .nav__link:nth-child(7) {
     flex-grow: 1;
     background: url("../../source/img/nav/power-button.png") no-repeat;
-    background-position: 50% 90%;
-}
+    background-position: 50% 95%;
+    }
