@@ -693,7 +693,70 @@ template {
 .main {
   width: 79%;
   height: 83%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #EEEEEE;
+}
+
+.main__Monthly {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  height: 30%;
+  margin: 1%;
+  background-color: orange;
+}
+
+.main__Revenue {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 30%;
+  margin: 1%;
+  background-color: green;
+}
+
+.main__Customers {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  height: 60%;
+  margin: 1%;
+  background-color: grey;
+}
+
+.main__Todays {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  height: 30%;
+  margin: 1%;
   background-color: blue;
+}
+
+.main__Progress {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 30%;
+  margin: 1%;
+  background-color: magenta;
+}
+
+.main__Shipments {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 30%;
+  margin: 1%;
+  background-color: salmon;
 }
 
 .side-box {

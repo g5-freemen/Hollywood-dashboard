@@ -1,5 +1,52 @@
 .main {
     width: 79%;
     height: 83%;
-    background-color:blue;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #EEEEEE;
 }
+
+.main__Monthly {
+    flex-grow: 2;
+    height: 30%;
+    margin: 1%;
+    background-color:orange;
+    }
+
+.main__Revenue {
+    flex-grow: 1;
+    height: 30%;
+    margin: 1%;
+    background-color:green;
+    }
+
+.main__Customers {
+    flex-grow: 2;
+    height: 60%;
+    margin: 1%;
+    background-color:grey;
+    }
+
+.main__Todays {
+    flex-grow: 2;
+    height: 30%;
+    margin: 1%;
+    background-color:blue;
+    }
+
+.main__Progress {
+    flex-grow: 1;
+    height: 30%;
+    margin: 1%;
+    background-color:magenta;
+    }
+
+.main__Shipments {
+    flex-grow: 1;
+    height: 30%;
+    margin: 1%;
+    background-color:salmon;
+    }
+
+
