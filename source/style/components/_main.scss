@@ -12,17 +12,35 @@
     }
 
 .main__Revenue, .main__Progress, .main__Shipments {
-    justify-content: center;
+    // padding: 3% 0;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     }
 
+.direction--row {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    }
+
+.main__title {
+    margin: auto;
+    font-size: 14px;
+    font-weight: bold;
+    }
+
 .main__Monthly {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     width: 61%;
     height: 34%;
     }
 
 .main__Monthly__graph {
-    width: 70%;
+    width: 90%;
     object-fit: contain;
     }
 

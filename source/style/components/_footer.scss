@@ -13,7 +13,7 @@
     }
 
 .footer_box {
-    @include flexibles(80%, 75%, space-between, space-between, row, wrap);
+    @include flexibles(80%, 65%, space-between, space-between, row, wrap);
     }
 
 .footer__link {
