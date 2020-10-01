@@ -706,55 +706,43 @@ template {
 }
 
 .main__Monthly {
-  -webkit-box-flex: 2;
-      -ms-flex-positive: 2;
-          flex-grow: 2;
+  width: 60%;
   height: 30%;
   margin: 1%;
   background-color: orange;
 }
 
 .main__Revenue {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  width: 35%;
   height: 30%;
   margin: 1%;
   background-color: green;
 }
 
 .main__Customers {
-  -webkit-box-flex: 2;
-      -ms-flex-positive: 2;
-          flex-grow: 2;
+  width: 48%;
   height: 60%;
   margin: 1%;
   background-color: grey;
 }
 
 .main__Todays {
-  -webkit-box-flex: 2;
-      -ms-flex-positive: 2;
-          flex-grow: 2;
+  width: 48%;
   height: 30%;
   margin: 1%;
   background-color: blue;
 }
 
 .main__Progress {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  width: 20%;
   height: 30%;
   margin: 1%;
   background-color: magenta;
 }
 
 .main__Shipments {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  height: 30%;
+  width: 20%;
+  height: 20%;
   margin: 1%;
   background-color: salmon;
 }
@@ -975,36 +963,35 @@ template {
   display: flex;
   width: 30%;
   height: 45%;
-  background-color: gold;
 }
 
 .footer__link:nth-child(1) {
-  background: url("../../source/img/footer/link-1.png") no-repeat center;
+  background: url("../../source/img/footer/rdio.png") no-repeat center;
   background-size: contain;
 }
 
 .footer__link:nth-child(2) {
-  background: url("../../source/img/footer/link-2.png") no-repeat center;
+  background: url("../../source/img/footer/css3.png") no-repeat center;
   background-size: contain;
 }
 
 .footer__link:nth-child(3) {
-  background: url("../../source/img/footer/link-3.png") no-repeat center;
+  background: url("../../source/img/footer/deviantart.png") no-repeat center;
   background-size: contain;
 }
 
 .footer__link:nth-child(4) {
-  background: url("../../source/img/footer/link-4.png") no-repeat center;
+  background: url("../../source/img/footer/xing.png") no-repeat center;
   background-size: contain;
 }
 
 .footer__link:nth-child(5) {
-  background: url("../../source/img/footer/link-5.png") no-repeat center;
+  background: url("../../source/img/footer/vimeo.png") no-repeat center;
   background-size: contain;
 }
 
 .footer__link:nth-child(6) {
-  background: url("../../source/img/footer/link-6.png") no-repeat center;
+  background: url("../../source/img/footer/vk.png") no-repeat center;
   background-size: contain;
 }
 /*# sourceMappingURL=main.css.map */
