@@ -7,15 +7,13 @@
 
 .main__Monthly, .main__Revenue, .main__Customers, .main__Todays, .main__Progress, .main__Shipments {
     display: flex;
+    box-sizing: border-box;
     background-color: #FFFFFF;
     box-shadow: 0.7vw 1vh 5px #DDDDDD;
     }
 
 .main__Revenue, .main__Progress, .main__Shipments {
-    box-sizing: border-box;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    @include flexible(center, center, column, wrap);
     }
 
 .direction--row {
@@ -24,28 +22,26 @@
     margin: auto;
     }
 
-.main__title {
-    margin: auto;
+.main__title, .main__title--left {
+    margin: auto 0;
     font-size: 14px;
     font-weight: bold;
     }
 
 .main__Monthly {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 61%;
-    height: 34%;
+    @include flexibles(73%, 34%, flex-start, flex-start, row, wrap);
+    padding: 3%;
     }
 
 .main__Monthly__graph {
-    width: 90%;
-    object-fit: contain;
+    margin-top: 4%;
+    width: 99%;
+    height: 75%;
+    object-fit: stretch;
     }
 
 .main__Revenue {
-    width: 36%;
-    height: 34%;
+    width: 25%;
     }
 
 .main__Revenue__graph {
@@ -54,17 +50,93 @@
     }
 
 .main__Customers {
-    width: 50%;
-    height: 60%;
+    width: 51%;
+    height: 63%;
+    padding: 3%;
+    flex-direction: column;
+    }
+
+.main__Customers__photo {
+    width: 43px;
+    height: 43px;
+    object-fit: cover;
+    object-position: center;
     }
 
 .main__box, .main__box--row {
-    @include flexibles(47%, 60%, space-between, flex-end, column, wrap);
+    @include flexibles(47%, 63%, space-between, flex-end, column, wrap);
     }
 
 .main__Todays {
-    width: 100%;
-    height: 45%;
+    @include flexibles(100%, 45%, flex-start, flex-start, column, nowrap);
+    padding: 3%;
+    }
+
+.main__checkbox__container {
+    @include flexibles(95%, 13%, flex-start, center, row, wrap);
+    padding: 1% 0;
+    border-top: 1px solid #EDEDED;
+    }
+
+.main__checkbox__container:nth-child(5) {
+    border-bottom: 1px solid #EDEDED;
+    margin-bottom: auto;
+    }
+
+.main__checkbox {
+    position: absolute;
+    opacity: 0;
+    }
+
+.main__checkbox + label {
+    display: flex;
+    width: 1vw;
+    height: 1vw;
+    background: #FFFFFF;
+    border-radius: 50%;
+    border: 1px solid #E2E2E2;
+    box-sizing: border-box;
+    }   // рисуем неотмеченный checkbox
+
+.main__checkbox:checked + label {
+    border: none;
+    background: linear-gradient(to right,rgb(243,114,87), rgb(253,82,114));
+    }   // рисуем отмеченный checkbox
+
+.main__checkbox:checked + label::after  {
+    content: "";
+    width: 30%;
+    height: 15%;
+    margin: 30% auto;
+    color:#FFFFFF;
+    border-left: 1%;
+    border-left-style: solid;
+    border-bottom: 1%;
+    border-bottom-style: solid;
+    transform: rotate(315deg);
+    }   // рисуем птичку в отмеченном checkbox
+    
+.main__checkbox__name {
+    width: 20%;
+    margin: auto 1%;
+    color: #FD566F;
+    font-weight: 900;
+    }
+
+.main__checkbox__description {
+    width: 55%;
+    margin: auto 0;
+    color: #BFBFBF;
+    font-size: 12px;
+    }
+
+.main__checkbox__clock {
+    color: #9C9C9C;
+    margin: auto 0;
+    padding-left: 4%;
+    font-size: 12px;
+    font-weight: bold;
+    background: url("../../source/img/main/clock.png") no-repeat left;
     }
 
 .main__box--row {
@@ -73,17 +145,13 @@
     height: 55%;
     }
 
-.main__Progress {
-    width: 46%;
+.main__Progress, .main__Shipments {
+    width: 48%;
     height: 90%;
-    }
-
-.main__Shipments {
-    width: 46%;
-    height: 90%;
+    align-items: center;
     }
 
 .main__Progress__graph, .main__Shipments__graph {
-    height: 40%;
+    height: 45%;
     object-fit: contain;
     }

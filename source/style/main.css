@@ -344,7 +344,7 @@ template {
 
 .wrapper {
   min-width: 320px;
-  min-height: 840px;
+  min-height: 720px;
   max-width: 1366px;
   font-family: 'Lato', sans-serif;
   display: -webkit-box;
@@ -717,24 +717,28 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background-color: #FFFFFF;
   -webkit-box-shadow: 0.7vw 1vh 5px #DDDDDD;
           box-shadow: 0.7vw 1vh 5px #DDDDDD;
 }
 
 .main__Revenue, .main__Progress, .main__Shipments {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .direction--row {
@@ -748,8 +752,8 @@ template {
   margin: auto;
 }
 
-.main__title {
-  margin: auto;
+.main__title, .main__title--left {
+  margin: auto 0;
   font-size: 14px;
   font-weight: bold;
 }
@@ -758,24 +762,32 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  width: 73%;
+  height: 34%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 61%;
-  height: 34%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  padding: 3%;
 }
 
 .main__Monthly__graph {
-  width: 90%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  margin-top: 4%;
+  width: 99%;
+  height: 75%;
+  -o-object-fit: stretch;
+     object-fit: stretch;
 }
 
 .main__Revenue {
-  width: 36%;
-  height: 34%;
+  width: 25%;
 }
 
 .main__Revenue__graph {
@@ -785,8 +797,22 @@ template {
 }
 
 .main__Customers {
-  width: 50%;
-  height: 60%;
+  width: 51%;
+  height: 63%;
+  padding: 3%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main__Customers__photo {
+  width: 43px;
+  height: 43px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .main__box, .main__box--row {
@@ -794,7 +820,7 @@ template {
   display: -ms-flexbox;
   display: flex;
   width: 47%;
-  height: 60%;
+  height: 63%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -809,8 +835,110 @@ template {
 }
 
 .main__Todays {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%;
   height: 45%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  padding: 3%;
+}
+
+.main__checkbox__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 95%;
+  height: 13%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 1% 0;
+  border-top: 1px solid #EDEDED;
+}
+
+.main__checkbox__container:nth-child(5) {
+  border-bottom: 1px solid #EDEDED;
+  margin-bottom: auto;
+}
+
+.main__checkbox {
+  position: absolute;
+  opacity: 0;
+}
+
+.main__checkbox + label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1vw;
+  height: 1vw;
+  background: #FFFFFF;
+  border-radius: 50%;
+  border: 1px solid #E2E2E2;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main__checkbox:checked + label {
+  border: none;
+  background: -webkit-gradient(linear, left top, right top, from(#f37257), to(#fd5272));
+  background: linear-gradient(to right, #f37257, #fd5272);
+}
+
+.main__checkbox:checked + label::after {
+  content: "";
+  width: 30%;
+  height: 15%;
+  margin: 30% auto;
+  color: #FFFFFF;
+  border-left: 1%;
+  border-left-style: solid;
+  border-bottom: 1%;
+  border-bottom-style: solid;
+  -webkit-transform: rotate(315deg);
+          transform: rotate(315deg);
+}
+
+.main__checkbox__name {
+  width: 20%;
+  margin: auto 1%;
+  color: #FD566F;
+  font-weight: 900;
+}
+
+.main__checkbox__description {
+  width: 55%;
+  margin: auto 0;
+  color: #BFBFBF;
+  font-size: 12px;
+}
+
+.main__checkbox__clock {
+  color: #9C9C9C;
+  margin: auto 0;
+  padding-left: 4%;
+  font-size: 12px;
+  font-weight: bold;
+  background: url("../../source/img/main/clock.png") no-repeat left;
 }
 
 .main__box--row {
@@ -822,18 +950,16 @@ template {
   height: 55%;
 }
 
-.main__Progress {
-  width: 46%;
+.main__Progress, .main__Shipments {
+  width: 48%;
   height: 90%;
-}
-
-.main__Shipments {
-  width: 46%;
-  height: 90%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main__Progress__graph, .main__Shipments__graph {
-  height: 40%;
+  height: 45%;
   -o-object-fit: contain;
      object-fit: contain;
 }
