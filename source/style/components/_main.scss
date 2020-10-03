@@ -28,15 +28,19 @@
     font-weight: bold;
     }
 
+.main__title--left {
+    margin: 0 0 1vh 0;
+    }
+
 .main__Monthly {
     @include flexibles(73%, 34%, flex-start, flex-start, row, wrap);
     padding: 3%;
     }
 
 .main__Monthly__graph {
-    margin-top: 4%;
     width: 99%;
-    height: 75%;
+    height: 85%;
+    margin-top: 2%;
     object-fit: stretch;
     }
 
@@ -51,17 +55,59 @@
 
 .main__Customers {
     width: 51%;
-    height: 63%;
+    // height: 63%;
     padding: 3%;
     flex-direction: column;
     }
 
+.main__Customers__box {
+    width: 100%;
+    height: 35%;
+    margin-bottom: 1%;
+    // background-color: red;
+    display: flex;
+    flex-direction: row;
+    }
+
+.main__Customers__photo-box, .main__Customers__feed-box {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    }
+
+.main__Customers__photo-box {
+    margin-right: 5%;
+    }
+
 .main__Customers__photo {
+    display: flex;
     width: 43px;
     height: 43px;
     object-fit: cover;
     object-position: center;
     }
+
+.main__Customers__photo-time {
+    padding-top: 1vh;
+    display: flex;
+    color: #979796;
+    font-size: 8px;
+    }
+
+.main__Customers__feed-box {
+    width: auto;
+    background-color: blue;
+    }
+
+.main__Customers__feed {
+    width: auto;
+    padding: 5%;
+    border: 1px solid #F1F1F1;
+    background-color: #FCFCFC;
+    color: #777777;
+    font-size: 12px;
+    overflow: hidden;
+}
 
 .main__box, .main__box--row {
     @include flexibles(47%, 63%, space-between, flex-end, column, wrap);
@@ -73,7 +119,7 @@
     }
 
 .main__checkbox__container {
-    @include flexibles(95%, 13%, flex-start, center, row, wrap);
+    @include flexibles(95%, 11%, flex-start, center, row, wrap);
     padding: 1% 0;
     border-top: 1px solid #EDEDED;
     }
