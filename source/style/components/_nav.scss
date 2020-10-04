@@ -28,7 +28,7 @@
 .nav__link {
     @include flexibles(4vw, 3vw, flex-end, center, column, wrap);
     margin: 6% auto;
-    font-size: 10px;
+    font-size: $fz10;
     color: #FFFFFF;
     text-decoration: none;
     }
