@@ -1,6 +1,8 @@
 .header {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 17%;
+    height: 17vmin;
     font-weight: bold;
     font-size: 16px;
     }
@@ -18,26 +20,32 @@
 
 .header_top__link:nth-child(1) {
     background: url("../../source/img/header/more.png") no-repeat center;
+    background-size: 50%;
     }
 
 .header_top__link:nth-child(2) {
     background: url("../../source/img/header/folder.png") no-repeat center;
+    background-size: 50%;
     }
 
 .header_top__link:nth-child(3) {
     background: url("../../source/img/header/settings.png") no-repeat center;
+    background-size: 50%;
     }
 
 .header_top__link:nth-child(5) {
     background: url("../../source/img/header/upload.png") no-repeat center;
+    background-size: 50%;  
     }
 
 .header_top__link:nth-child(6) {
     background: url("../../source/img/header/mail.png") no-repeat center;
+    background-size: 50%;
     }
 
 .header_top__link:nth-child(7) {
     background: url("../../source/img/header/globe.png") no-repeat 50% 30%;
+    background-size: 50%;
     }
 
 .header_top__search {
@@ -49,10 +57,12 @@
     width: 50%;
     padding: 1% 2%;
     border: 1px #F2F2F2 solid;
-    border-radius: 5vw;
+    border-radius: 3vmin;
     background: url("../../source/img/header/zoom-in.png") no-repeat 96%;
+    background-size: contain;
     background-color: #F8F8F8;
     color: #C8C8C8;
+    font-size: 12px;
     }
 
 .header_top__person {
@@ -69,7 +79,7 @@
 
 .header_top__person-name {
     margin: 0 0 2% 5%;
-    font-size: 13px;
+    font-size: $fz13;
     color: red;
     }
 
@@ -81,14 +91,20 @@
     }
 
 .header_top__dots {
-    background: url("../../source/img/header/Ellipse3.png") no-repeat center;
+    display: flex;
     border-left: none;
+    }
+
+.dots {
+    flex-grow: 1;
+    background: url("../../source/img/header/Ellipse3.png") no-repeat center;
     }
 
 .header_bottom {
     height: 60%;
     display: flex;
     flex-direction: row;
+    overflow: auto;
     }
 
 .header_bottom__stat, .header_bottom__add-stat {
@@ -115,7 +131,7 @@
     margin: 1% 0 2%;
     color: #FD7858;
     font-weight: bold;
-    font-size: 20px;
+    font-size: $fz20;
     }
 
 .header_bottom__stat--today-up, .header_bottom__stat--today-down {

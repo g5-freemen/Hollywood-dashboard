@@ -28,21 +28,23 @@
     <header class="header">
 
         <div class="header_top">
-          <div class="header_top__link"></div>
-          <div class="header_top__link"></div>
-          <div class="header_top__link"></div>
+          <a class="header_top__link" href="#"></a>
+          <a class="header_top__link" href="#"></a>
+          <a class="header_top__link" href="#"></a>
           <div class="header_top__search">
             <input class="header_top__search--input" type="text" value="Search Anything Here....">
           </div>
-          <div class="header_top__link"></div>
-          <div class="header_top__link"></div>
-          <div class="header_top__link"></div>
+          <a class="header_top__link" href="#"></a>
+          <a class="header_top__link" href="#"></a>
+          <a class="header_top__link" href="#"></a>
           <div class="header_top__person">
             <img class="header_top__person-photo" src="./source/img/header/Person.png" alt="Kendall Jenner">
             <p class="header_top__person-name">Kendall Jenner</p>
             <p class="header_top__person-occupation">Cheif Authority</p>
           </div>
-          <div class="header_top__dots"></div>
+          <div class="header_top__dots">
+            <span class="dots"></span>
+          </div>
         </div> <!--end of .header_top -->
 
         <div class="header_bottom">
@@ -103,12 +105,29 @@
             </div>
           </div>
           <div class="header_bottom__add-stat">+‎&#160;&#160;Add Stactics</div>
-        </div> <!--end of .header_top -->
+        </div> <!--end of .header_bottom -->
     </header> <!--end of header -->
 
     <main class="main">
       <div class="main__Monthly">
         <div class="main__title--left">Monthly Revenue Progress</div>
+        <div class="main__radio-box">
+  
+            <input class="main__period-radio" type="radio" name="period" id="period-month" checked>
+						<label for="period-month">
+							<span class="main__period">Month</span>
+            </label>
+            <input class="main__period-radio" type="radio" name="period" id="period-day">
+						<label for="period-day">
+							<span class="main__period">Day</span>
+            </label>
+            <input class="main__period-radio" type="radio" name="period" id="period-year">
+						<label for="period-year">
+							<span class="main__period">Year</span>
+            </label>
+        </div>
+        <span class="main__period__dots"></span>
+
         <img class="main__Monthly__graph" src="./source/img/main/Monthly-graph.png" alt="Monthly Revenue Progress graph">
       </div>
       <div class="main__Revenue">
@@ -129,8 +148,18 @@
           <div class="main__Customers__feed-box">
             <span class="main__Customers__feed">
               Sophie Turner is simply dummy text of the printing and 
-              typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+              typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
             </span>
+            <div class="main__Customers__feed-old">
+              <span class="main__Customers__feed">
+              Sophie Turner is simply dummy text of the printing and 
+              typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+              </span>
+              <span class="main__Customers__feed">
+              Sophie Turner is simply dummy text of the printing and 
+              typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+              </span>
+            </div>
           </div>
         </div>
         <div class="main__Customers__box">
@@ -141,7 +170,7 @@
           <div class="main__Customers__feed-box">
             <span class="main__Customers__feed">
               Peter Quill is simply dummy text of the printing and 
-              typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+              typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
             </span>
           </div>
         </div>
@@ -199,7 +228,7 @@
       </div>
     </main> <!--end of main -->
 
-    <div class="side-box">
+    <div class="side-box"> <!--start of .side-box >> aside + footer -->
       <aside class="aside">
         <div class="aside__menu">
           <div class="aside__menu__icon"></div>
@@ -248,12 +277,9 @@
           <div class="footer__link"></div>
           <div class="footer__link"></div>
           <div class="footer__link"></div>
-
         </div>
       </footer> <!--end of footer -->
     </div> <!--end of .side-box -->
-
-
 
   </div> <!--end of .container -->
 </div> <!--end of .wrapper -->

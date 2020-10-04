@@ -1,0 +1,7 @@
+.main__period__dots, .dots {
+    transition: transform 1s;
+    }
+
+.dots:hover, .main__period__dots:hover {
+    transform: scale(2) rotate(360deg);
+    }

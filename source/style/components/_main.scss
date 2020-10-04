@@ -7,6 +7,7 @@
 
 .main__Monthly, .main__Revenue, .main__Customers, .main__Todays, .main__Progress, .main__Shipments {
     display: flex;
+    // margin: 1%;
     box-sizing: border-box;
     background-color: #FFFFFF;
     box-shadow: 0.7vw 1vh 5px #DDDDDD;
@@ -24,59 +25,100 @@
 
 .main__title, .main__title--left {
     margin: auto 0;
-    font-size: 14px;
+    font-size: $fz14;
     font-weight: bold;
     }
 
 .main__title--left {
-    margin: 0 0 1vh 0;
+    margin: 0 0 0 0;
     }
 
 .main__Monthly {
-    @include flexibles(73%, 34%, flex-start, flex-start, row, wrap);
-    padding: 3%;
+    @include flexibles(70%, 32%, flex-start, flex-start, row, wrap);
+    margin-bottom: 2%;
+    padding: 2%;
+    overflow: auto;
     }
 
 .main__Monthly__graph {
     width: 99%;
-    height: 85%;
-    margin-top: 2%;
+    height: 78%;
+    margin-top: 1%;
     object-fit: stretch;
     }
 
+.main__radio-box {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    justify-content: flex-end;
+    }
+
+.main__period {
+    display: flex;
+    flex-grow: 1;
+    padding: 0.8vh 0.8vw;
+    color: #BFBFBF;
+    font-weight: bold;
+    font-size: 12px;
+    }
+
+.main__period-radio {
+    position: absolute;
+    opacity: 0;
+    }  //прячем default checkbox 
+
+.main__period-radio + label span {
+    display: flex;
+    border: none;
+    box-sizing: border-box;
+    }   // рисуем неотмеченный checkbox
+
+.main__period-radio:checked + label span {
+    color: #FFFFFF;
+    border: none;
+    border-radius: 1vw;
+    background: linear-gradient(to right,rgb(243,114,87), rgb(253,82,114));
+    }   // рисуем отмеченный checkbox
+
+.main__period__dots {
+    width: 2vw;
+    background: url("../../source/img/header/Ellipse3.png") no-repeat center;
+    }
+
 .main__Revenue {
-    width: 25%;
+    flex-grow: 1;
+    margin: 0 0 2% 2%;
     }
 
 .main__Revenue__graph {
-    height: 60%;
+    width: 45%;
     object-fit: contain;
     }
 
 .main__Customers {
-    width: 51%;
-    // height: 63%;
-    padding: 3%;
+    width: 53%;
+    height: 64%;
+    padding: 2%;
+    display: flex;
     flex-direction: column;
+    flex-grow: 1;
+    margin-right: 2%;
+    overflow-y: auto;
     }
 
 .main__Customers__box {
     width: 100%;
-    height: 35%;
-    margin-bottom: 1%;
-    // background-color: red;
     display: flex;
     flex-direction: row;
+    align-items: space-between;
+    margin-top: 3%;
     }
 
 .main__Customers__photo-box, .main__Customers__feed-box {
     display: flex;
     flex-direction: column;
     width: 20%;
-    }
-
-.main__Customers__photo-box {
-    margin-right: 5%;
     }
 
 .main__Customers__photo {
@@ -95,49 +137,68 @@
     }
 
 .main__Customers__feed-box {
-    width: auto;
-    background-color: blue;
+    width: 85%;
+    flex-direction: column;
+    align-items: flex-end;
     }
 
+.main__Customers__feed-old {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding-left: 10%;
+    border-left: 0.2vw solid #F1F1F1;
+    overflow: auto;
+}
+
 .main__Customers__feed {
-    width: auto;
-    padding: 5%;
+    display: flex;
+    margin-bottom: 2%;
+    padding: 3%;
     border: 1px solid #F1F1F1;
     background-color: #FCFCFC;
     color: #777777;
     font-size: 12px;
     overflow: hidden;
-}
+    }
 
-.main__box, .main__box--row {
-    @include flexibles(47%, 63%, space-between, flex-end, column, wrap);
+.main__box {
+    @include flexibles(45%, 64%, space-between, center, column, wrap);
+    box-sizing: border-box;
     }
 
 .main__Todays {
-    @include flexibles(100%, 45%, flex-start, flex-start, column, nowrap);
-    padding: 3%;
+    @include flexibles(100%, 48%, flex-start, center, column, nowrap);
+    padding: 4% 3%;
+    margin-bottom: 3%;
+    overflow: auto;
     }
 
 .main__checkbox__container {
-    @include flexibles(95%, 11%, flex-start, center, row, wrap);
-    padding: 1% 0;
+    @include flexibles(96%, 15%, flex-start, center, row, wrap);
+    padding: 0.6% 0;
     border-top: 1px solid #EDEDED;
+    }
+
+.main__checkbox__container:nth-child(2) {
+    margin-top: 3%;
     }
 
 .main__checkbox__container:nth-child(5) {
     border-bottom: 1px solid #EDEDED;
-    margin-bottom: auto;
     }
 
 .main__checkbox {
     position: absolute;
     opacity: 0;
-    }
+
+    }  //прячем default checkbox
 
 .main__checkbox + label {
     display: flex;
     width: 1vw;
     height: 1vw;
+    margin: auto 0;
     background: #FFFFFF;
     border-radius: 50%;
     border: 1px solid #E2E2E2;
@@ -186,18 +247,16 @@
     }
 
 .main__box--row {
-    flex-direction: row;
-    width: 100%;
-    height: 55%;
+    @include flexibles(100%, 48%, space-between, space-between, row, wrap);
     }
 
 .main__Progress, .main__Shipments {
     width: 48%;
-    height: 90%;
+    height: 100%;
     align-items: center;
     }
 
 .main__Progress__graph, .main__Shipments__graph {
-    height: 45%;
+    width: 50%;
     object-fit: contain;
     }

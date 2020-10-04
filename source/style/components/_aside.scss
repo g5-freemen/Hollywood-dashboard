@@ -17,7 +17,7 @@
 
 .aside__menu__icon {
     flex-grow: 1;
-    height: 50%;
+    height: 40%;
     }
 
 .aside__menu__icon:nth-child(1) {
@@ -58,7 +58,7 @@
 .aside__actor--name {
     margin: 0 0 0 5%;
     color: #777777;
-    font-size: 13px;
+    font-size: $fz13;
     font-weight: bold;
     }
 
