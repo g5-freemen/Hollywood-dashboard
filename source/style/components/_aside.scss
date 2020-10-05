@@ -42,6 +42,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
     background: url("../../source/img/aside/chat-actor.png") no-repeat right;
+    background-size: 10%;
     border-bottom: 2px solid #F1F1F1;
     align-items: center;
     }
@@ -92,6 +93,7 @@
     height: 1.5vw;
     margin-right: 3%;
     background: url("../../source/img/aside/zoom.png") no-repeat center;
+    background-size: contain;
     border: none;
     }
 
@@ -99,5 +101,6 @@
     width: 1.5vw;
     height: 1.5vw;
     background: url("../../source/img/aside/edit.png") no-repeat center;
+    background-size: contain;
     border: none;
     }

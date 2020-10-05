@@ -1,42 +1,37 @@
 .main {
-    @include flexibles(79%, auto, space-between, space-between, row, wrap);
+    @include flexibles(79%, 84vh, space-between, space-between, row, wrap);
     border: 1vw solid #EEEEEE;
     box-sizing: border-box;
     background-color: #EEEEEE;
+    // overflow-y: auto;
     }
 
 .main__Monthly, .main__Revenue, .main__Customers, .main__Todays, .main__Progress, .main__Shipments {
     display: flex;
-    // margin: 1%;
+    margin: 1%;
     box-sizing: border-box;
     background-color: #FFFFFF;
     box-shadow: 0.7vw 1vh 5px #DDDDDD;
     }
 
 .main__Revenue, .main__Progress, .main__Shipments {
-    @include flexible(center, center, column, wrap);
+    @include flexible(space-around, center, column, wrap);
     }
 
 .direction--row {
     display: flex;
     flex-direction: row;
-    margin: auto;
     }
 
-.main__title, .main__title--left {
-    margin: auto 0;
+.main__title {
     font-size: $fz14;
     font-weight: bold;
     }
 
-.main__title--left {
-    margin: 0 0 0 0;
-    }
-
 .main__Monthly {
-    @include flexibles(70%, 32%, flex-start, flex-start, row, wrap);
+    @include flexibles(70%, auto, flex-start, flex-start, row, wrap);
     flex-grow: 2;
-    margin-bottom: 2%;
+    // margin-bottom: 2%;
     padding: 2%;
     overflow: auto;
     }
@@ -89,7 +84,7 @@
 
 .main__Revenue {
     flex-grow: 1;
-    margin: 0 0 2% 2%;
+    // margin: 0 0 2% 2%;
     align-items: center;
     }
 
@@ -105,7 +100,7 @@
     display: flex;
     flex-direction: column;
     flex-grow: 2;
-    margin-right: 2%;
+    // margin-right: 2%;
     overflow-y: auto;
     }
 
@@ -174,7 +169,7 @@
     @include flexibles(100%, 48%, flex-start, center, column, wrap);
     flex-grow: 1;
     padding: 4% 3%;
-    margin-bottom: 3%;
+    // margin-bottom: 3%;
     overflow: auto;
     }
 
@@ -249,6 +244,7 @@
     font-size: $fz10;
     font-weight: bold;
     background: url("../../source/img/main/clock.png") no-repeat left;
+    background-size: contain;
     }
 
 .main__box--row {

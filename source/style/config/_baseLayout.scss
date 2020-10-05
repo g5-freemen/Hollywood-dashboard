@@ -9,7 +9,8 @@
     }
 
 .container {
-    @include flexibles(94%, 100vh, center, center, row, wrap);
+    @include flexibles(auto, auto, flex-start, flex-start, row, wrap);
+    margin-left: $nav-width;
     }
 
 @font-face {

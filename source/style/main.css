@@ -362,19 +362,20 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 94%;
-  height: 100vh;
+  width: auto;
+  height: auto;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  margin-left: 5%;
 }
 
 @font-face {
@@ -392,7 +393,8 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 6%;
+  position: fixed;
+  width: 5%;
   height: 100vh;
   background: -webkit-gradient(linear, left top, left bottom, from(#f37257), to(#fd5272));
   background: linear-gradient(to bottom, #f37257, #fd5272);
@@ -492,13 +494,14 @@ template {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  height: 17vmin;
+  height: 16vh;
   font-weight: bold;
   font-size: calc(6px + 0.77vw);
-  overflow: auto;
 }
 
 .header_top {
+  margin: 0;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -507,9 +510,13 @@ template {
       -ms-flex-direction: row;
           flex-direction: row;
   height: 40%;
+  width: 100%;
 }
 
 .header_top__link, .header_top__dots, .header_top__search, .header_top__person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -542,7 +549,7 @@ template {
 }
 
 .header_top__link:nth-child(7) {
-  background: url("../../source/img/header/globe.png") no-repeat 50% 30%;
+  background: url("../../source/img/header/globe.png") no-repeat center;
   background-size: 50%;
 }
 
@@ -607,7 +614,7 @@ template {
 
 .header_top__person-name {
   margin: 0 0 2% 5%;
-  font-size: calc(5px + 0.62vw);
+  font-size: calc(5px + 0.55vw);
   color: red;
 }
 
@@ -718,7 +725,7 @@ template {
   display: -ms-flexbox;
   display: flex;
   width: 79%;
-  height: auto;
+  height: 84vh;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -740,6 +747,7 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 1%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #FFFFFF;
@@ -755,9 +763,8 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-line-pack: center;
       align-content: center;
   -ms-flex-wrap: wrap;
@@ -772,17 +779,11 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin: auto;
 }
 
-.main__title, .main__title--left {
-  margin: auto 0;
+.main__title {
   font-size: calc(6px + 0.62vw);
   font-weight: bold;
-}
-
-.main__title--left {
-  margin: 0 0 0 0;
 }
 
 .main__Monthly {
@@ -790,7 +791,7 @@ template {
   display: -ms-flexbox;
   display: flex;
   width: 70%;
-  height: 32%;
+  height: auto;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -805,7 +806,6 @@ template {
   -webkit-box-flex: 2;
       -ms-flex-positive: 2;
           flex-grow: 2;
-  margin-bottom: 2%;
   padding: 2%;
   overflow: auto;
 }
@@ -878,7 +878,6 @@ template {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  margin: 0 0 2% 2%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -904,7 +903,6 @@ template {
   -webkit-box-flex: 2;
       -ms-flex-positive: 2;
           flex-grow: 2;
-  margin-right: 2%;
   overflow-y: auto;
 }
 
@@ -1038,7 +1036,6 @@ template {
       -ms-flex-positive: 1;
           flex-grow: 1;
   padding: 4% 3%;
-  margin-bottom: 3%;
   overflow: auto;
 }
 
@@ -1133,6 +1130,7 @@ template {
   font-size: calc(5px + 0.4vw);
   font-weight: bold;
   background: url("../../source/img/main/clock.png") no-repeat left;
+  background-size: contain;
 }
 
 .main__box--row {
@@ -1245,6 +1243,7 @@ template {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   background: url("../../source/img/aside/chat-actor.png") no-repeat right;
+  background-size: 10%;
   border-bottom: 2px solid #F1F1F1;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1313,6 +1312,7 @@ template {
   height: 1.5vw;
   margin-right: 3%;
   background: url("../../source/img/aside/zoom.png") no-repeat center;
+  background-size: contain;
   border: none;
 }
 
@@ -1320,6 +1320,7 @@ template {
   width: 1.5vw;
   height: 1.5vw;
   background: url("../../source/img/aside/edit.png") no-repeat center;
+  background-size: contain;
   border: none;
 }
 

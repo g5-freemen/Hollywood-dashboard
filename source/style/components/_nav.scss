@@ -1,7 +1,8 @@
 .nav {
     display: flex;
     flex-direction: column;
-    width: 6%;
+    position: fixed;
+    width: $nav-width;
     height: 100vh;
     background: linear-gradient(to bottom,rgb(243,114,87), rgb(253,82,114));
     text-decoration: none;
