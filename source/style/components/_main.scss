@@ -173,13 +173,13 @@
 .main__Todays {
     @include flexibles(100%, auto, space-between, flex-start, column, nowrap);
     flex: auto;
-    margin-bottom: 1%;
+    margin-bottom: 3%;
     padding: 4% 3%;
     overflow: auto;
     }
 
 .main__checkbox__container {
-    @include flexibles(97%, 15%, flex-start, center, row, wrap);
+    @include flexibles(97%, auto, flex-start, center, row, wrap);
     padding: 0.6% 0;
     border-top: 1px solid #EDEDED;
     overflow: hidden;
@@ -259,12 +259,12 @@
 
 .main__Progress, .main__Shipments {
     width: 48.5%;
-    height: auto;
+    height: 100%;
     align-items: center;
     }
 
 .main__Progress__graph, .main__Shipments__graph {
     max-width: 50%;
     max-height: 50%;
-    object-fit: stretch;
+    object-fit: contain;
     }
