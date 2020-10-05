@@ -1,5 +1,5 @@
 .main {
-    @include flexibles(79%, 84vh, space-between, space-between, row, wrap);
+    @include flexibles(79%, auto, space-between, flex-start, row, wrap);
     border: 1vw solid #EEEEEE;
     box-sizing: border-box;
     background-color: #EEEEEE;
@@ -14,6 +14,10 @@
     box-shadow: 0.7vw 1vh 5px #DDDDDD;
     }
 
+.main__Todays, .main__Progress, .main__Shipments {
+    margin: 0;
+    }
+
 .main__Revenue, .main__Progress, .main__Shipments {
     @include flexible(space-around, center, column, wrap);
     }
@@ -24,23 +28,24 @@
     }
 
 .main__title {
-    font-size: $fz14;
+    display: flex;
+    width: max-content;
+    font-size: $fz12;
     font-weight: bold;
     }
 
 .main__Monthly {
     @include flexibles(70%, auto, flex-start, flex-start, row, wrap);
-    flex-grow: 2;
-    // margin-bottom: 2%;
+    flex-grow: 1;
     padding: 2%;
     overflow: auto;
     }
 
 .main__Monthly__graph {
     width: 99%;
-    height: 78%;
+    // height: 70%;
     margin-top: 1%;
-    object-fit: stretch;
+    object-fit: contain;
     }
 
 .main__radio-box {
@@ -56,7 +61,7 @@
     padding: 0.8vh 0.8vw;
     color: #BFBFBF;
     font-weight: bold;
-    font-size: $fz12;
+    font-size: $fz10;
     }
 
 .main__period-radio {
@@ -78,13 +83,12 @@
     }   // рисуем отмеченный checkbox
 
 .main__period__dots {
-    width: 2vw;
+    width: 2vmin;
     background: url("../../source/img/header/Ellipse3.png") no-repeat center;
     }
 
 .main__Revenue {
     flex-grow: 1;
-    // margin: 0 0 2% 2%;
     align-items: center;
     }
 
@@ -95,12 +99,13 @@
 
 .main__Customers {
     width: 53%;
-    height: 64%;
+    flex: auto;
+    // height: 64%;
+    height: fit-content;
     padding: 2%;
     display: flex;
     flex-direction: column;
-    flex-grow: 2;
-    // margin-right: 2%;
+    // flex-grow: 1;
     overflow-y: auto;
     }
 
@@ -115,7 +120,7 @@
 .main__Customers__photo-box, .main__Customers__feed-box {
     display: flex;
     flex-direction: column;
-    width: 20%;
+    flex-grow: 1;
     }
 
 .main__Customers__photo {
@@ -160,21 +165,21 @@
     }
 
 .main__box {
-    @include flexibles(45%, 64%, space-between, center, column, wrap);
-    flex-grow: 1;
-    box-sizing: border-box;
+    @include flexibles(40%, auto, space-between, space-between, column, wrap);
+    flex: auto;
+    margin: 1%;
     }
 
 .main__Todays {
-    @include flexibles(100%, 48%, flex-start, center, column, wrap);
-    flex-grow: 1;
+    @include flexibles(100%, auto, space-between, flex-start, column, nowrap);
+    flex: auto;
+    margin-bottom: 1%;
     padding: 4% 3%;
-    // margin-bottom: 3%;
     overflow: auto;
     }
 
 .main__checkbox__container {
-    @include flexibles(96%, 15%, flex-start, center, row, wrap);
+    @include flexibles(97%, 15%, flex-start, center, row, wrap);
     padding: 0.6% 0;
     border-top: 1px solid #EDEDED;
     overflow: hidden;
@@ -195,8 +200,8 @@
 
 .main__checkbox + label {
     display: flex;
-    width: 1vw;
-    height: 1vw;
+    width: 1vmin;
+    height: 1vmin;
     margin: auto 0;
     background: #FFFFFF;
     border-radius: 50%;
@@ -248,16 +253,18 @@
     }
 
 .main__box--row {
-    @include flexibles(100%, 48%, space-between, space-between, row, wrap);
+    @include flexibles(100%, auto, space-between, flex-end, row, wrap);
+    flex: auto;
     }
 
 .main__Progress, .main__Shipments {
-    width: 48%;
-    height: 100%;
+    width: 48.5%;
+    height: auto;
     align-items: center;
     }
 
 .main__Progress__graph, .main__Shipments__graph {
-    width: 50%;
-    object-fit: contain;
+    max-width: 50%;
+    max-height: 50%;
+    object-fit: stretch;
     }

@@ -4,7 +4,7 @@
     justify-content: $jCont;
     align-content: $aCont;
     flex-wrap: $wrap;
-}
+    }
 
 @mixin flexibles($W, $H, $jCont:center, $aCont:center, $direct:row, $wrap:wrap) {
     display: flex;
@@ -14,4 +14,4 @@
     flex-wrap: $wrap;
     justify-content: $jCont;
     align-content: $aCont;
-}
+    }

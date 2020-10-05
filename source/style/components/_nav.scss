@@ -27,35 +27,39 @@
     }
 
 .nav__link {
-    @include flexibles(4vw, 3vw, flex-end, center, column, wrap);
-    margin: 6% auto;
-    font-size: $fz10;
-    color: #FFFFFF;
+    @include flexibles(auto, auto, flex-end, center, column, wrap);
+    flex-grow: 1;
     text-decoration: none;
     }
 
+.nav__link__name {
+    margin: max-content auto 0;
+    font-size: $fz10;
+    color: #FFFFFF;
+    }
+
 .nav__link:nth-child(2) {
-    background: url("../../source/img/nav/home.png") no-repeat 50% 30%;
+    background: url("../../source/img/nav/home.png") no-repeat center;
     }
 
 .nav__link:nth-child(3) {
-    background: url("../../source/img/nav/bar-chart.png") no-repeat 50% 30%;
+    background: url("../../source/img/nav/bar-chart.png") no-repeat center;
     }
 
 .nav__link:nth-child(4) {
-    background: url("../../source/img/nav/user.png") no-repeat 50% 30%;
+    background: url("../../source/img/nav/user.png") no-repeat center;
     }
 
 .nav__link:nth-child(5) {
-    background: url("../../source/img/nav/settings.png") no-repeat 50% 30%;
+    background: url("../../source/img/nav/settings.png") no-repeat center;
     }
 
 .nav__link:nth-child(6) {
-    background: url("../../source/img/nav/information.png") no-repeat 50% 30%;
+    background: url("../../source/img/nav/information.png") no-repeat center;
     }
 
 .nav__link:nth-child(7) {
-    flex-grow: 1;
+    flex-grow: 12;
     background: url("../../source/img/nav/power-button.png") no-repeat;
     background-position: 50% 95%;
     }
