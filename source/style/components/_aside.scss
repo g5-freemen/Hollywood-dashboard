@@ -3,7 +3,7 @@
     }
 
 .aside {
-    height: 73%;
+    height: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,6 +13,7 @@
 .aside__menu {
     @include flexibles(100%, 6vmin, center, center, row, wrap);
     background: linear-gradient(to right,rgb(243,114,87), rgb(253,82,114));
+    margin-bottom: 1%;
     }
 
 .aside__menu__icon {
