@@ -90,6 +90,7 @@
 .main__Revenue {
     flex-grow: 1;
     margin: 0 0 2% 2%;
+    align-items: center;
     }
 
 .main__Revenue__graph {
@@ -181,6 +182,7 @@
     @include flexibles(96%, 15%, flex-start, center, row, wrap);
     padding: 0.6% 0;
     border-top: 1px solid #EDEDED;
+    overflow: hidden;
     }
 
 .main__checkbox__container:nth-child(2) {
@@ -226,7 +228,7 @@
     }   // рисуем птичку в отмеченном checkbox
     
 .main__checkbox__name {
-    width: 21%;
+    width: 20%;
     margin: auto 1%;
     color: #FD566F;
     font-size: $fz14;
@@ -234,7 +236,7 @@
     }
 
 .main__checkbox__description {
-    width: 57%;
+    width: 55%;
     margin: auto 0;
     color: #BFBFBF;
     font-size: $fz10;
