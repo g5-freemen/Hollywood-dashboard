@@ -3,7 +3,6 @@
     border: 1vw solid #EEEEEE;
     box-sizing: border-box;
     background-color: #EEEEEE;
-    // overflow-y: auto;
     }
 
 .main__Monthly, .main__Revenue, .main__Customers, .main__Todays, .main__Progress, .main__Shipments {
@@ -82,8 +81,11 @@
     }   // рисуем отмеченный checkbox
 
 .main__period__dots {
-    width: 2vmin;
-    background: url("../../source/img/header/Ellipse3.png") no-repeat center;
+    display: flex;
+    width: 1.5vmax;
+    height: 1.5vmax;
+    background: url("../../source/img/header/Ellipse3.png") no-repeat bottom;
+    background-size: contain;
     }
 
 .main__Revenue {
@@ -132,7 +134,7 @@
     padding-top: 1vh;
     display: flex;
     color: #979796;
-    font-size: 8px;
+    font-size: $fz8;
     }
 
 .main__Customers__feed-box {
