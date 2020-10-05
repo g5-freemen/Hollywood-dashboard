@@ -73,16 +73,17 @@
     }
 
 .aside__search {
-    @include flexibles(100%, 10%, center, center, row, wrap);
+    @include flexibles(100%, auto, flex-start, center, row, wrap);
     background-color: #FCFCFC;
     border-top: #F1F1F1 1px solid;
     border-bottom: #F1F1F1 1px solid;
     }
 
 .aside__search--input {
-    margin: 0 10% 0 5%;
+    display: flex;
+    margin: 2% 5%;
     padding-bottom: 1%;
-    width: 60%;
+    width: 70%;
     color: #C0C0C0;
     font-weight: 300;
     font-size: $fz10;
@@ -91,17 +92,17 @@
     }
 
 .aside__search--zoom {
-    width: 1.5vmin;
-    height: 1.5vmin;
-    margin-right: 3%;
+    // width: 1vmin;
+    // height: 1vmin;
+    margin-right: 2%;
     background: url("../../source/img/aside/zoom.png") no-repeat center;
     background-size: contain;
     border: none;
     }
 
 .aside__search--edit {
-    width: 1.5vmin;
-    height: 1.5vmin;
+    // width: 1vmin;
+    // height: 1vmin;
     background: url("../../source/img/aside/edit.png") no-repeat center;
     background-size: contain;
     border: none;

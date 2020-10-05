@@ -459,7 +459,7 @@ template {
 
 .nav__link__name {
   margin: max-content auto 0;
-  font-size: calc(5px + 0.4vw);
+  font-size: calc(5px + 0.4vmin);
   color: #FFFFFF;
 }
 
@@ -505,7 +505,7 @@ template {
   width: 100%;
   height: 15vmin;
   font-weight: bold;
-  font-size: calc(6px + 0.77vw);
+  font-size: calc(6px + 0.77vmin);
 }
 
 .header_top {
@@ -588,9 +588,10 @@ template {
   border: 1px #F2F2F2 solid;
   border-radius: 3vmin;
   background: url("../../source/img/header/zoom-in.png") no-repeat 96%;
+  background-size: min-content;
   background-color: #F8F8F8;
   color: #C8C8C8;
-  font-size: calc(5px + 0.55vw);
+  font-size: calc(5px + 0.55vmin);
 }
 
 .header_top__person {
@@ -623,13 +624,13 @@ template {
 
 .header_top__person-name {
   margin: 0 0 2% 5%;
-  font-size: calc(5px + 0.55vw);
+  font-size: calc(5px + 0.55vmin);
   color: red;
 }
 
 .header_top__person-occupation {
   margin: 0 0 0 5%;
-  font-size: calc(5px + 0.4vw);
+  font-size: calc(5px + 0.4vmin);
   font-weight: 400;
   color: #BFBFBF;
 }
@@ -682,7 +683,7 @@ template {
 
 .header_bottom__add-stat {
   color: #FD7858;
-  font-size: calc(5px + 0.55vw);
+  font-size: calc(5px + 0.55vmin);
 }
 
 .header_bottom__stat--name, .header_bottom__stat--value, .header_bottom__stat--today {
@@ -705,14 +706,14 @@ template {
 .header_bottom__stat--name, .header_bottom__stat--today-up, .header_bottom__stat--today-down {
   color: #777777;
   font-weight: bold;
-  font-size: calc(5px + 0.55vw);
+  font-size: calc(5px + 0.55vmin);
 }
 
 .header_bottom__stat--value {
   margin: 1% 0;
   color: #FD7858;
   font-weight: bold;
-  font-size: calc(6px + 1.1vw);
+  font-size: calc(6px + 1.1vmin);
 }
 
 .header_bottom__stat--today-up, .header_bottom__stat--today-down {
@@ -801,7 +802,7 @@ template {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  font-size: calc(5px + 0.55vw);
+  font-size: calc(5px + 0.55vmin);
   font-weight: bold;
 }
 
@@ -862,7 +863,7 @@ template {
   padding: 0.8vh 0.8vw;
   color: #BFBFBF;
   font-weight: bold;
-  font-size: calc(5px + 0.4vw);
+  font-size: calc(5px + 0.4vmin);
 }
 
 .main__period-radio {
@@ -1009,7 +1010,7 @@ template {
   border: 1px solid #F1F1F1;
   background-color: #FCFCFC;
   color: #777777;
-  font-size: calc(5px + 0.55vw);
+  font-size: calc(5px + 0.55vmin);
   overflow: hidden;
 }
 
@@ -1134,22 +1135,22 @@ template {
   width: 20%;
   margin: auto 1%;
   color: #FD566F;
-  font-size: calc(6px + 0.62vw);
+  font-size: calc(6px + 0.62vmin);
   font-weight: 900;
 }
 
 .main__checkbox__description {
-  width: 55%;
+  width: 54%;
   margin: auto 0;
   color: #BFBFBF;
-  font-size: calc(5px + 0.4vw);
+  font-size: calc(5px + 0.4vmin);
 }
 
 .main__checkbox__clock {
   color: #9C9C9C;
   margin: auto 0;
   padding-left: 4%;
-  font-size: calc(5px + 0.4vw);
+  font-size: calc(5px + 0.4vmin);
   font-weight: bold;
   background: url("../../source/img/main/clock.png") no-repeat left;
   background-size: contain;
@@ -1294,7 +1295,7 @@ template {
 .aside__actor--name {
   margin: 0 0 0 5%;
   color: #777777;
-  font-size: calc(5px + 0.62vw);
+  font-size: calc(5px + 0.62vmin);
   font-weight: bold;
 }
 
@@ -1302,7 +1303,7 @@ template {
   white-space: pre;
   content: "\0a Cheif Authority";
   color: #BFBFBF;
-  font-size: calc(5px + 0.4vw);
+  font-size: calc(5px + 0.4vmin);
 }
 
 .aside__search {
@@ -1310,16 +1311,16 @@ template {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 10%;
+  height: auto;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -ms-flex-line-pack: center;
       align-content: center;
   background-color: #FCFCFC;
@@ -1328,28 +1329,27 @@ template {
 }
 
 .aside__search--input {
-  margin: 0 10% 0 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2% 5%;
   padding-bottom: 1%;
-  width: 60%;
+  width: 70%;
   color: #C0C0C0;
   font-weight: 300;
-  font-size: calc(5px + 0.4vw);
+  font-size: calc(5px + 0.4vmin);
   border: none;
   border-bottom: 1px solid #E9E9E9;
 }
 
 .aside__search--zoom {
-  width: 1.5vmin;
-  height: 1.5vmin;
-  margin-right: 3%;
+  margin-right: 2%;
   background: url("../../source/img/aside/zoom.png") no-repeat center;
   background-size: contain;
   border: none;
 }
 
 .aside__search--edit {
-  width: 1.5vmin;
-  height: 1.5vmin;
   background: url("../../source/img/aside/edit.png") no-repeat center;
   background-size: contain;
   border: none;
@@ -1388,7 +1388,7 @@ template {
       align-content: center;
   color: #777777;
   font-weight: bold;
-  font-size: calc(6px + 0.62vw);
+  font-size: calc(6px + 0.62vmin);
 }
 
 .footer_box {
@@ -1484,6 +1484,16 @@ template {
 @media screen and (max-width: 375px) {
   .main__box {
     width: 100%;
+  }
+}
+
+@media screen and (width: 1920px) {
+  .container {
+    margin-left: 7%;
+  }
+  .side-box {
+    background-color: red;
+    height: 100%;
   }
 }
 /*# sourceMappingURL=main.css.map */

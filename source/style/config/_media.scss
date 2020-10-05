@@ -1,5 +1,5 @@
 @media screen and (max-width: 768px) {
-    .nav {
+    .nav { 
         display: none;
         }
     
@@ -27,3 +27,15 @@
         width: 100%;
         }
     }
+    
+@media screen and (width: 1920px) {
+    .container {
+        margin-left: 7%;
+        }
+
+        .side-box {
+            background-color:red;
+            height: 100%;
+            }
+
+}
