@@ -2,21 +2,22 @@
 
     .wrapper {
         flex-direction: column;
-    }
+        }
 
     .nav {
         position: relative;
         flex-direction: row;
         width: 100%;
         height: $nav-width;
+        justify-content: space-between;
         }
-
-    // .nav__logo--wrapper, .nav__logo {
-    //     display: none;
-    //     }
 
     .nav__link {
         display: none;
+        }
+
+    .burger-menu {
+        display: flex;
         }
     
     .container {

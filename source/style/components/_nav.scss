@@ -52,3 +52,39 @@
     background: url("../../source/img/nav/power-button.png") no-repeat;
     background-position: 50% 95%;
     }
+
+.burger-menu {
+    width: $nav-width;
+    height: $nav-width;
+    }
+
+.burger-menu::before {
+    content: "";
+    position: absolute;
+    bottom: $nav-width*0.2;
+    width: $nav-width/2;
+    height: $nav-width/9;
+    background-color: #FFFFFF;
+    border-radius: 0.1*$nav-width;
+    }
+
+.burger-menu {
+    display: none;
+    position: relative;
+    top: $nav-width*0.45;
+    right: $nav-width/5;
+    width: $nav-width/2;
+    height: $nav-width/9;
+    background-color: #FFFFFF;
+    border-radius: 0.1*$nav-width;
+    }
+
+.burger-menu::after {
+    position: absolute;
+    content: "";
+    top: $nav-width*0.2;
+    width: $nav-width/2;
+    height: $nav-width/9;
+    background-color: #FFFFFF;
+    border-radius: 0.1*$nav-width;
+    }
