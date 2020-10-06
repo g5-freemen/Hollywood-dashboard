@@ -77,6 +77,7 @@
     height: $nav-width/9;
     background-color: #FFFFFF;
     border-radius: 0.1*$nav-width;
+    transition: transform 2s;
     }
 
 .burger-menu::after {
@@ -87,4 +88,8 @@
     height: $nav-width/9;
     background-color: #FFFFFF;
     border-radius: 0.1*$nav-width;
+    }
+
+.burger-menu:hover {
+    transform: rotate(360deg);
     }
