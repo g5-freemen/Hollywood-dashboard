@@ -8,22 +8,12 @@
     text-decoration: none;
     }
 
-.nav__logo--wrapper {
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    padding-bottom: 100%; // пропорции блока определяются здесь
-    }
-
 .nav__logo {
-    @include flexibles(100%, 100%, center,center,column, wrap);
-    position: absolute;
-    top: 0;
-    left: 0;
+    @include flexibles($nav-width, $nav-width, center,center,column, wrap);
     background-color: #FFFFFF;
     color: rgba($color: #FF0000, $alpha: 0.5);
     font-family: 'Deftone Stylus', arial;  
-    font-size: 30px;
+    font-size: $fz30;
     }
 
 .nav__link {
@@ -33,7 +23,6 @@
     }
 
 .nav__link__name {
-    // margin: auto 0;
     font-size: $fz10;
     color: #FFFFFF;
     }
