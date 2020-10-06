@@ -114,7 +114,6 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    align-items: space-between;
     margin-top: 3%;
     }
 
@@ -150,9 +149,9 @@
     flex-direction: column;
     width: 80%;
     padding-left: 10%;
-    border-left: 0.2vw solid #F1F1F1;
+    border-left: 0.3vmin solid #F1F1F1;
     overflow: auto;
-}
+    }
 
 .main__Customers__feed {
     display: flex;

@@ -1,5 +1,21 @@
 @media screen and (max-width: 768px) {
-    .nav { 
+
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .nav {
+        position: relative;
+        flex-direction: row;
+        width: 100%;
+        height: $nav-width;
+        }
+
+    .nav__logo--wrapper, .nav__logo {
+        display: none;
+        }
+
+    .nav__link {
         display: none;
         }
     
@@ -26,10 +42,6 @@
     .main__box {
         width: 100%;
         }
-    .main__customers {
-        // width: 100%;
-    }
-
     }
     
 @media screen and (width: 1920px) {
