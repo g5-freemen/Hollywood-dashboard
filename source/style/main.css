@@ -362,7 +362,7 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: auto;
+  width: 100%;
   height: auto;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -532,32 +532,32 @@ template {
 
 .header_top__link:nth-child(1) {
   background: url("../../source/img/header/more.png") no-repeat center;
-  background-size: 50%;
+  background-size: 1vmax;
 }
 
 .header_top__link:nth-child(2) {
   background: url("../../source/img/header/folder.png") no-repeat center;
-  background-size: 50%;
+  background-size: 1vmax;
 }
 
 .header_top__link:nth-child(3) {
   background: url("../../source/img/header/settings.png") no-repeat center;
-  background-size: 50%;
+  background-size: 1vmax;
 }
 
 .header_top__link:nth-child(5) {
   background: url("../../source/img/header/upload.png") no-repeat center;
-  background-size: 50%;
+  background-size: 1vmax;
 }
 
 .header_top__link:nth-child(6) {
   background: url("../../source/img/header/mail.png") no-repeat center;
-  background-size: 50%;
+  background-size: 1vmax;
 }
 
 .header_top__link:nth-child(7) {
   background: url("../../source/img/header/globe.png") no-repeat center;
-  background-size: 50%;
+  background-size: 1vmax;
 }
 
 .header_top__search {
@@ -657,7 +657,7 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  overflow: auto;
+  overflow-x: auto;
 }
 
 .header_bottom__stat, .header_bottom__add-stat {
@@ -673,13 +673,11 @@ template {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
   padding-left: 1%;
 }
 
@@ -749,6 +747,9 @@ template {
           justify-content: space-between;
   -ms-flex-line-pack: start;
       align-content: flex-start;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
   border: 1vw solid #EEEEEE;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -967,10 +968,10 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 43px;
-  height: 43px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  width: 4vmin;
+  height: 4vmin;
+  -o-object-fit: contain;
+     object-fit: contain;
   -o-object-position: center;
      object-position: center;
 }

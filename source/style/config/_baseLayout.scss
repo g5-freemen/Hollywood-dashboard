@@ -9,7 +9,7 @@
     }
 
 .container {
-    @include flexibles(auto, auto, flex-start, flex-start, row, wrap);
+    @include flexibles(100%, auto, flex-start, flex-start, row, wrap);
     margin-left: $nav-width;
     }
 

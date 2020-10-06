@@ -1,5 +1,6 @@
 .main {
     @include flexibles(79%, auto, space-between, flex-start, row, wrap);
+    flex: auto;
     border: 1vw solid #EEEEEE;
     box-sizing: border-box;
     background-color: #EEEEEE;
@@ -125,9 +126,9 @@
 
 .main__Customers__photo {
     display: flex;
-    width: 43px;
-    height: 43px;
-    object-fit: cover;
+    width: 4vmin;
+    height: 4vmin;
+    object-fit: contain;
     object-position: center;
     }
 

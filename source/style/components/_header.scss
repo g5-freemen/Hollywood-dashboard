@@ -23,32 +23,32 @@
 
 .header_top__link:nth-child(1) {
     background: url("../../source/img/header/more.png") no-repeat center;
-    background-size: 50%;
+    background-size: 1vmax;
     }
 
 .header_top__link:nth-child(2) {
     background: url("../../source/img/header/folder.png") no-repeat center;
-    background-size: 50%;
+    background-size: 1vmax;
     }
 
 .header_top__link:nth-child(3) {
     background: url("../../source/img/header/settings.png") no-repeat center;
-    background-size: 50%;
+    background-size: 1vmax;
     }
 
 .header_top__link:nth-child(5) {
     background: url("../../source/img/header/upload.png") no-repeat center;
-    background-size: 50%;  
+    background-size: 1vmax;
     }
 
 .header_top__link:nth-child(6) {
     background: url("../../source/img/header/mail.png") no-repeat center;
-    background-size: 50%;
+    background-size: 1vmax;
     }
 
 .header_top__link:nth-child(7) {
     background: url("../../source/img/header/globe.png") no-repeat center;
-    background-size: 50%;
+    background-size: 1vmax;
     }
 
 .header_top__search {
@@ -108,13 +108,12 @@
     height: 60%;
     display: flex;
     flex-direction: row;
-    overflow: auto;
+    overflow-x: auto;
     }
 
 .header_bottom__stat, .header_bottom__add-stat {
-    @include flexible(center,center,column, wrap);
+    @include flexible(center,center,column, nowrap);
     flex-grow: 1;
-    flex-wrap: nowrap;
     padding-left: 1%;
     }
 
