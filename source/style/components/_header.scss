@@ -62,7 +62,7 @@
     border: 1px #F2F2F2 solid;
     border-radius: 3vmin;
     background: url("../../source/img/header/zoom-in.png") no-repeat 96%;
-    background-size: min-content;
+    background-size: 1vmin;
     background-color: #F8F8F8;
     color: #C8C8C8;
     font-size: $fz12;
@@ -115,6 +115,7 @@
     @include flexible(center,center,column, wrap);
     flex-grow: 1;
     flex-wrap: nowrap;
+    padding-left: 1%;
     }
 
 .header_bottom__add-stat {

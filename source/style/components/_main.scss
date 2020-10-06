@@ -94,8 +94,9 @@
     }
 
 .main__Revenue__graph {
-    width: 45%;
-    object-fit: contain;
+    width: auto;
+    height: 33%;
+    object-fit: cover;
     }
 
 .main__Customers {
@@ -248,7 +249,7 @@
     font-size: $fz10;
     font-weight: bold;
     background: url("../../source/img/main/clock.png") no-repeat left;
-    background-size: contain;
+    background-size: 1vmin;
     }
 
 .main__box--row {
